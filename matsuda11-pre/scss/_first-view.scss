@@ -1,0 +1,53 @@
+.first-v {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    @include tab {
+        height: 597px;
+    }
+    &__wrap {
+        height: 27%;
+        width: 30%;
+        position: absolute;
+        top: 32%;
+        left: 10%;
+        font-size: 3.8rem ;
+        @include tab {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            position: absolute;
+            top: 23%;
+            left: 10%;
+            color: #FFFFFF;
+            width: 79%;
+
+
+        }
+            p {
+        padding-top: 48px;
+        font-family: "Zapfino", "Regular", "Arial","sans-serif";
+        @include tab {
+            font-size: 2.8rem;
+            line-height: 9.5rem;;
+        }
+    }
+    }
+    &__img {
+        background-image: url(../img/component.png);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 54%;
+        @include tab {
+            background-image:url(../img/tab1.png);
+            width: 100%;
+            background-size: cover;
+            background-position: top;
+            height: 100%;
+        }
+    }
+}
