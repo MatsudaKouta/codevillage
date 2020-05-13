@@ -1,0 +1,72 @@
+/////////////////
+//    mixin   //
+/////////////////
+@mixin pc {
+    @media screen and (min-width: 960px){
+        @content;
+    }
+}
+@mixin tab {
+    @media screen and (max-width: 959px){
+        @content;
+    }
+}
+@mixin sp {
+    @media screen and (max-width: 600px){
+        @content;   
+    }
+}
+
+html {
+    font-size: 62.6%;
+}
+
+.main-title {
+        font-family: "ヒラギノ明朝 Pro", "W3", "Arial", "sans-serif";
+        font-size: 3.8rem ;
+        @include tab {
+            font-size: 2.3rem;
+        }
+    }
+
+.sub-title {
+    font-size: 1.8rem;
+    color: #707070;
+    font-family: "Roboto", "Arial", "Helvetica", "sans-serif";
+    display: flex;
+    align-items: center;
+    @include tab {
+        padding-bottom: 50px;
+    }
+    &:after {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #707070;
+        width: 6em;
+        margin-left: 2.25rem;
+    }
+
+}
+
+$pt: 260px ;
+
+.inner {
+    padding-top: $pt;
+    width: 100% - 17%; //17%は両側の余白
+    margin: 0 auto;
+    @include tab {
+        padding-top: 60px;
+        width: 100% - 11%; //11%は両側の余白
+        margin: 0 auto;
+    }
+}
+
+/////////////////
+//    変数   　//
+/////////////////
+$f-family: 'Roboto Mono for Powerline',"Arial", "Helvetica", "sans-serif";
+
+$pt: 260px ; //各セクションのpadding top
+
+$bg-color-1: #A193861F;
+$bg-color-2: #A1938689;
