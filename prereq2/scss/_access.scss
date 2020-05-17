@@ -1,0 +1,34 @@
+.ac-inner {
+    margin-top: 100px;
+    height: 689px;
+    position: relative;
+    .ac-img {
+        width: 69%;
+        height: px;
+        text-align: center;
+        position: absolute;
+        top: 129px;
+        right: 0;
+        z-index: 1;
+        }
+        .ac-address {
+            position: absolute;
+            top: 208px;
+            left: 0;
+            background-color: $bgc;
+            width: 76.7%;
+            height: 311px;
+            z-index: -1;
+    p {
+        font-size: 1.8rem;
+        height: 64px;
+        width: 299px;
+        line-height: 175%;
+        position: absolute;
+        top: 150px;
+        left: 54px;
+        text-align: center;
+    }
+}
+}
+

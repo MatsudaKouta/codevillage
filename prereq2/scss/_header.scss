@@ -1,0 +1,70 @@
+.hd-bgc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $bgc;
+    width: 60.5em;
+    height: 585px;
+    z-index: -1;
+    
+}
+
+.hd-item {
+    position: absolute;
+    left: 15%;
+    top: 11.65rem;
+    width: 8.65rem;
+    height: 20.35rem;
+
+    p,h1{
+        writing-mode: vertical-rl
+    }
+    h1 {
+       font-size: 4rem; 
+       margin-top: -50px;
+       span {
+           margin-top: 0.5em;
+           &:first-child {
+               margin-top: 0;
+           }
+       }
+    }
+    p {
+        font-size: 1.6rem;
+        text-align: right;
+        margin: 0 0 0 auto;
+    }
+} 
+
+.hd-nav {
+    position:relative;
+    ul {
+        position: absolute;
+        top: 407.5px;
+        left: 13.3%;
+    }
+    li {
+        margin-top: 41px;
+        &:first-child {
+            margin-top: 0;
+        }
+        font-size: 1.8rem;
+
+    }
+}
+
+.reserve {
+    position: fixed;
+    top: 543px;
+    left: 0;
+    button {
+        width: 78px;
+        height: 252px;
+        background: linear-gradient(to bottom, $bgc 80%, #000000);
+        p{
+            writing-mode: vertical-rl;;
+            color: #FFFFFF;
+            margin: 0 auto;
+        }
+    }
+}

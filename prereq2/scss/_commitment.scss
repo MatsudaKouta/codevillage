@@ -1,0 +1,34 @@
+.commitment {
+    .cm-inner{
+    height: 776px;
+    background: linear-gradient(to bottom, #000000 40%, $bgc 40%)
+}
+}
+
+.slide-show {
+    width: 80.1%;
+    height: 34.7rem;
+    text-align: center;
+    margin: 7.05rem auto 0 auto;
+    line-height: 34.7rem;
+    background-color: #fff;
+    p {
+        color: black;
+    }
+}
+
+.cm-item {
+    margin-top: 6.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 157px;
+    p {
+        font-size: 2rem;
+        span {
+            font-size: 2.5rem;
+        }
+
+    }
+}

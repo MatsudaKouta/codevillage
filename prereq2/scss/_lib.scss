@@ -1,0 +1,55 @@
+/////////////////
+//    mixin   //
+/////////////////
+@mixin pc {
+    @media screen and (min-width: 960px){
+        @content;
+    }
+}
+@mixin tab {
+    @media screen and (max-width: 959px){
+        @content;
+    }
+}
+@mixin sp {
+    @media screen and (max-width: 600px){
+        @content;   
+    }
+}
+
+/////////////////
+//    共通項目   //
+/////////////////
+
+html {
+    font-size: 62.6%;
+    font-family: "Sawarabi Mincho";
+    color: #FFFFFF;
+    background-color: #000000;    
+}
+
+.inner {
+    width: 85.4%;
+    margin: 100px auto 0 auto;
+}
+
+.sub-title {
+    color: #FFFFFF;
+    font-size: 3.6rem;
+    text-align: center;
+    &:after {
+       display: block;
+       content: "";
+       border-top: 1px solid #FFFFFF;
+       width: 2.2em;
+       margin: 2.25rem auto 0 auto;
+       } 
+    }
+
+/////////////////
+//    変数   　//
+/////////////////
+
+$bgc : #800000;
+
+$mp-inner : 100px auto 0 auto;
